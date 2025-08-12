@@ -1,5 +1,5 @@
 from django.contrib import admin
-from contact.models import Contact
+from contact.models import Contact, Category
 
 # Register your models here.
 @admin.register(Contact)
@@ -13,3 +13,8 @@ class ContactAdmin(admin.ModelAdmin):
     list_editable = 'first_name', 'last_name',                  # Permite que os campos sejam editados com nula necessidade de adentrar ao contato para tal objetivo.
     list_display_links = 'id', 'phone',                         # Define o que será link nos campos de dados exibidos. ATENÇÃO: se o param. referido estiver em editable
                                                                 # um erro ocorrerá.
+
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = 'name',
+    ordering = 'id',
