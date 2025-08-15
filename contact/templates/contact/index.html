@@ -1,6 +1,6 @@
 {% extends 'global/base.html'%}
 {%block content%} 
-{% if contact%}
+{% if page_obj%}
     {% comment %} {% for contact in contacts %}
         {{contact.first_name}} <br>
     {% endfor %} {% endcomment %}
@@ -21,7 +21,7 @@
             </thead>
 
             <tbody>
-                {% for contact in contacts %}
+                {% for contact in page_obj %}
                     <tr class="table-row">
                         <td class="table-cell"><a href="{%url 'contact:contact' contact.id%}" class="table-link">
                             {{contact.id}}
