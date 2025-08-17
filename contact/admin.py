@@ -10,7 +10,7 @@ class ContactAdmin(admin.ModelAdmin):
     search_fields = 'id', 'first_name', 'last_name',            # Define os campos de pesquisa permitidos.
     list_per_page = 50                                          # Máximo de dados por páginas.
     list_max_show_all = 200                                     # Máximo de dados se pressiona show_all.
-    list_editable = 'first_name', 'last_name', 'show',                  # Permite que os campos sejam editados com nula necessidade de adentrar ao contato para tal objetivo.
+    list_editable = 'first_name', 'last_name', 'show',          # Permite que os campos sejam editados com nula necessidade de adentrar ao contato para tal objetivo.
     list_display_links = 'id', 'phone',                         # Define o que será link nos campos de dados exibidos. ATENÇÃO: se o param. referido estiver em editable
                                                                 # um erro ocorrerá.
 

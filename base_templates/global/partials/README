@@ -1,0 +1,4 @@
+A pasta partials serve para colocar partes do HTML, em vez de escrevê-lo em um arquivo somente,
+deixando-o imenso. 
+Partials também é útil para partes que terão de se repetir no site, economizando linhas e linhas
+de código.

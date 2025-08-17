@@ -56,7 +56,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR/'base_templates',
+            BASE_DIR/'base_templates', # Define onde o Django deve buscar pelos templates do seu site. Definindo isso,
+                                       # será possível utilizar esse arquivos em qualquer lugar apenas usando "extends".
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -119,7 +120,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = (
-    BASE_DIR/'base_static',
+    BASE_DIR/'base_static', # Aqui é definido onde o Django deve procurar pelos arquivos estáticos do projeto.
 )
 STATIC_ROOT = BASE_DIR/'static' # collectstatic
 
