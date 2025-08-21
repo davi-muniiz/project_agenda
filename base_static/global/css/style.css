@@ -292,7 +292,13 @@ svg {
   font-size: var(--smaller-font-size);
 }
 
+.contact-links {
+  display: flex;
+  padding-top: 10px;
+}
+
 .btn {
+  max-width: 100px;
   background-color: var(--link-dark-color);
   color: var(--clr-white);
   font-weight: bold;
@@ -311,4 +317,15 @@ svg {
 .btn:active {
   filter: brightness(80%);
   box-shadow: 0 0 5px var(--link-dark-color);
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+.btn-delete {
+  background-color: red;
+  margin-left: 10px;
+  font-weight: bolder;
+  height: 45px;
 }
