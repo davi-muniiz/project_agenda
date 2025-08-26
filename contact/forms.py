@@ -24,7 +24,8 @@ class ContactForm(forms.ModelForm):
             attrs={
                 'accept': 'image/*',           # Aceita imagem de todos os formatos.
             }
-        )
+        ),
+        required=False
     )
 
 
